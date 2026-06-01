@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Velvet SEO
- * Plugin URI:  https://github.com/yourusername/velvet-seo
+ * Plugin URI:  https://github.com/BharathkumarB04/Velvet-SEO-plugin
  * Description: A modern, lightweight, and professional WordPress SEO plugin to manage meta tags, schema, and social sharing. One Stop solution for SEO.!!
  * Version:     1.0
  * Author:      Bharathkumar
