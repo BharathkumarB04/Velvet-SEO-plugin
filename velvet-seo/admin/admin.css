@@ -1,0 +1,196 @@
+.velvet-seo-wrapper {
+    margin: 20px 20px 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.velvet-seo-header {
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.velvet-seo-header h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #1d2327;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.velvet-seo-header .v-badge {
+    font-size: 12px;
+    background: #2271b1;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.velvet-seo-header .subtitle {
+    margin: 0;
+    font-size: 14px;
+    color: #646970;
+}
+
+/* Master Grid Structure Layout */
+.velvet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .velvet-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* White Card Deck Elements Components */
+.velvet-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.velvet-card.active-card {
+    border-color: #2271b1;
+    box-shadow: 0 6px 18px rgba(34, 113, 177, 0.08);
+}
+
+.velvet-card .card-header {
+    padding: 18px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.velvet-card .card-header h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Yes / No Toggle Switches Pill Element */
+.switch-toggle {
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 6px;
+    display: inline-flex;
+    border: 1px solid #e2e8f0;
+}
+
+.switch-toggle label {
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.switch-toggle label:has(input:checked) {
+    background: #ffffff;
+    color: #2271b1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+}
+
+.switch-toggle input[type="radio"] {
+    display: none;
+}
+
+/* Card Data Form Container */
+.velvet-card .card-body {
+    padding: 20px;
+}
+
+.velvet-card .field-title {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #475569;
+    font-size: 13px;
+}
+
+.velvet-card input[type="text"],
+.velvet-card input[type="url"],
+.velvet-card textarea,
+.velvet-card .velvet-select {
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    background: #fff;
+    color: #1e293b;
+    box-shadow: none;
+    transition: border-color 0.15s ease;
+}
+
+.velvet-card input:focus,
+.velvet-card textarea:focus,
+.velvet-card .velvet-select:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.velvet-card textarea.raw-code {
+    font-family: monospace, Courier, monospace;
+    font-size: 12px;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.counter-info {
+    font-size: 11px;
+    color: #94a3b8;
+    text-align: right;
+    margin-top: 4px;
+}
+
+/* Notice UI Extensions */
+.velvet-notice {
+    padding: 1px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+.velvet-notice.success { background: #ecfdf5; border-left-color: #10b981; color: #065f46; }
+.velvet-notice.error { background: #fef2f2; border-left-color: #ef4444; color: #991b1b; }
+
+/* Control Operations Layout Bar Footer */
+.velvet-action-bar {
+    margin-top: 25px;
+    background: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    display: flex;
+    gap: 12px;
+}
+
+.velvet-action-bar .button {
+    padding: 6px 18px !important;
+    height: auto !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+}
+
+.v-btn-save { background: #2271b1 !important; border-color: #2271b1 !important; }
+.v-btn-reset { background: #f1f5f9 !important; color: #64748b !important; border: 1px solid #cbd5e1 !important; }
+.v-btn-reset:hover { background: #e2e8f0 !important; color: #334155 !important; }
