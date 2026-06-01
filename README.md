@@ -44,3 +44,5 @@ velvet-seo/
     ├── frontend-meta.php      # Header & Body Tag Injection Hook Filters
     ├── post-seo-meta.php      # Individual Post/Page Meta Box Input UI
     └── seo-assets-generator.php # Rewrite Rules Controller & Hard-Flush Matrix
+
+⚠️ **Development Note:** After installed and activated the plugin, Settings > Permalinks, set save changes for better performance.
